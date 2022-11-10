@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header{
+    padding: 1px;
+    text-align: left;
+    background-color: #1abc9c;
+    color: black;
+}
+/*style the navigation bar*/
+.nav {
+    display: flex;
+    background-color: #333;
+}
+/*style the navigation bar links*/
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+}
+/*change color on hover*/
+.nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Codemarch Academy</h1>
+    </div>
+    <div class="nav">
+        <a href="home.html">HOME</a>
+        <a href="columns.html">SERVICES</a>
+        <a href="work.html">WORK</a>
+        <a href="contact.html">CONTACT US</a>
+
+    </div>
+<h2>Code Camp Services</h2>
+<p><strong> code camp is a Bootcamp where we give out resouces pertaining to the skils. You can earn the fundamentals at HTML,CSS,TAILWIND CSS, AND GIT here at Codecamp.</strong></p>
+
+<div class="row">
+  <div class="column" style="background-color: white;">
+    <img src="html.png" height="128px"  width="128px">
+    <h2>HTML</h2>
+    <p>Hyper Text Mark-up Language (a system used to mark test for World Wide Web pages in order to obtain colors,styles,pictures, etc)</p>
+  </div>
+  
+  <div class="column" style="background-color:white;">
+    <img src="css.png" height="128px"  width="128px">
+    <h2>CSS</h2>
+    <p> CSS stands for Cascading Style sheet. CSS describe how HTML elements are to be displayed  on screen, paper or in any other media.</p>
+  </div>
+  
+  <div class="column" style="background-color:white">
+    <img src="tail.png" height="128px"  width="128px">
+    <h2>Tailwind CSS</h2>
+    <p>  Tailwind CSS is an open source CSS Framework. The main feature of the library is that unlike other css framework like Bootstrap  </p>
+  </div>
+  
+</div>
+<div class="row">
+    <div class="column" style="background-color:white;">
+        <img src="git.png" height="128px"  width="128px">
+        <h2>Git and Git Hub</h2>
+        <p>  Git is a version control system that lets you </p>
+    </div>
+    
+    <div class="column" style="background-color:white;">
+        <img src="design.png" height="128px"  width="128px">
+        <h2>Design</h2>
+        <p>  A design is a plan or specification for </p>
+    </div>
+    
+    <div class="column" style="background-color:white;">
+        <img src="design.png" height="128px"  width="128px">
+        <h2>Error Fixing</h2>
+        <p>  A bug fix is a change to a system or product </p>
+    </div>
+    
+    
+  </div>
+</body>
+</html>
+
+

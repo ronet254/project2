@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header{
+    padding: 1px;
+    text-align: left;
+    background-color: #1abc9c;
+    color: black;
+}
+/*style the navigation bar*/
+.nav {
+    display: flex;
+    background-color: #333;
+}
+/*style the navigation bar links*/
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+}
+/*change color on hover*/
+.nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Codemarch Academy</h1>
+    </div>
+    <div class="nav">
+        <a href="home.html">HOME</a>
+        <a href="columns.html">SERVICES</a>
+        <a href="work.html">WORK</a>
+        <a href="contact.html">CONTACT US</a>
+    </div>
+<h2>SOME OF OUR FINEST WORK</h2>
+<p><strong> Web development is the work involved in developing s website for the internet or an intranet. Web delopment can range from developing a simple single static page of plain text to a complex web application,electronic business and social networking services.</strong></p>
+
+<div class="row">
+  <div class="column" style="background-color: white;">
+    <img src="w2.jpeg" height="320px"  width="320px">
+  </div>
+  
+  <div class="column" style="background-color:white;">
+    <img src="w9.jpeg" height="320px"  width="320px">
+  </div>
+  
+  <div class="column" style="background-color:white">
+    <img src="w3.jpeg" height="320px"  width="320px">
+  </div>
+  <div class="column" style="background-color:white">
+    <img src="w4.jpeg" height="320px"  width="320px">
+  </div>
+</div>
+<div class="row">
+    <div class="column" style="background-color:white;">
+        <img src="w5.jpeg" height="320px"  width="320px">
+    </div>
+    
+    <div class="column" style="background-color:white;">
+        <img src="w6.jpeg" height="320px"  width="320px">
+    </div>
+    
+    <div class="column" style="background-color:white;">
+        <img src="w7.jpeg" height="320px"  width="320px">
+    </div>
+    <div class="column" style="background-color:white;">
+        <img src="w8.jpeg" height="320px"  width="320px">
+    </div>
+    
+  </div>
+</body>
+</html>
+
+

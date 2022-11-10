@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: tan;
+    color: black;
+}
+/*on screens that are 992px or less background color is blue*/
+@media screen  and (max-width: 992px) {
+    body{
+        background-color: palevioletred;
+        color: blue;
+    }
+/*on screens that are 600px and below the background colr is olive*/
+@media screen  and (max-width: 600px) {
+    body{
+        background-color: olive;
+        color: white;
+    }
+    
+}
+    
+}
+.top{
+    overflow: hidden;
+    background-color: black;
+}
+.top a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.top a:hover{
+    background-color: #ddd;
+    color: black;
+
+}
+h1{
+    font-size: 60px;
+    font-family: sofia, sans-serif;
+    background-color: blueviolet;
+}

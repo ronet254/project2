@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.header{
+    padding: 1px;
+    text-align: left;
+    background-color: #1abc9c;
+    color: black;
+}
+/*style the navigation bar*/
+.nav {
+    display: flex;
+    background-color: #333;
+}
+/*style the navigation bar links*/
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+
+}
+/*change color on hover*/
+.nav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 70%;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column2 {
+    width: 30%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: blue;
+  color: white;
+  padding: 12px 400px;
+  border: solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Codemarch Academy</h1>
+    </div>
+    <div class="nav">
+        <a href="home.html">HOME</a>
+        <a href="columns.html">SERVICES</a>
+        <a href="work.html">WORK</a>
+        <a href="contact.html">CONTACT US</a>
+    </div>
+<h2>CODEMARCH ACADEMY</h2>
+<h3>CONTACT US</h3>
+<p><strong> If your are a developer and need assistance understanding javascript  or react please contact me at codemarch123@gmail.com</strong></p>
+
+<div class="row">
+  <div class="column1" style="background-color: white;">
+    <h3>Contact Form</h3>
+
+<div class="container">
+  <form>
+    
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" id="email" name="email" placeholder="Email">
+    <input type="text" id="email" name="email" placeholder="Subject">
+    <textarea id="subject" name="subject" placeholder="Message" style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
+  </div>
+  
+  <div class="column2" style="background-color:white;">
+    <img src="location.png" height="56px"  width="56px"><h4>Address</h4>
+    
+    <p>Shavinge Maleshvara<br>Hills,1st stage, <br>Kumaraswamy Layout,<br> Bengaluru  Kunataka <br>560078</p>
+    <img src="email.png" height="56px"  width="56px">
+    <h4>Email</h4>
+    <p>codemarch123@gmail.com</p>
+    <img src="twiter.png" height="56px"  width="56px">
+    <h4>twiter</h4>
+    <p><a href="#">Codemarch</a></p>
+  </div>
+</div>
+    
+  </div>
+</body>
+</html>
+
+
